@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curriculum Personale</title>
+    <link rel="stylesheet" href="Style/style.css">
 </head>
 <body>
     
@@ -13,17 +14,25 @@
         <h2>Curriculum Vitae Graziano</h2>
         IT trainer
 
+
+        <input class="side-menu" type="checkbox" id="side-menu"/>
+        <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+
+
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Home/ CV</a>
+                </li>
+                <li>
+                    <a href="about.html">About me</a>
+                </li>
+            </ul>
+        </nav>
+
     </header>
-    <nav>
-        <ul>
-            <li>
-                <a href="index.html">Home/ CV</a>
-            </li>
-            <li>
-                <a href="about.html">About me</a>
-            </li>
-        </ul>
-    </nav>
+    
     <main>
 
         <!-- Le esperienze accademiche sono così caratterizzate:
@@ -89,7 +98,12 @@
 
         <article>
             <h3>Lingue</h3>
-            Inglese, Spagnolo, Ungherese
+            <ul>
+                <li>Italiano</li>
+                <li>Inglese</li>
+                <li>Spagnolo</li>
+            </ul>
+           
         </article>
 
         <article>
@@ -137,3 +151,30 @@
 meta name viewport è per comunicare al browser che devono configurarsi in base
 a se sono in modalità desktop o mobile. Il contenuto viene riproporzionato rispetto
 alla lunghezza del device-->
+
+
+<parent-1>
+    <child-1></child-1>
+    <child-2></child-2>
+</parent-1>
+
+
+<parent-2>
+        <child-1></child-1>
+        <child-2></child-2>
+        <child-3></child-3>    
+        
+</parent-2>
+
+<style>
+    /* seleziono child-1 solo se figlio di parent*/
+    parent child-1 {
+        color: antiquewhite;
+    }
+    child-3 ~ child-1 {
+        color: blue;
+    }
+
+    /* Voglio selezionare child-1 solo se è fratello del child-3
+    venga impattato*/
+</style>
